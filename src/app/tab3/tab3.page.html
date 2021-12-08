@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Products
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-grid>
+   <ion-row>
+     <ion-col size="12">
+      <ion-item>
+        <ion-label position="floating">Product Name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+     </ion-col>
+     <ion-col size="12">
+      <ion-item>
+        <ion-label position="floating">Product Description</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">Product MRP</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">Discounted Price</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">Floating Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">Floating Label</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-list>
+        <ion-radio-group value="yes">
+          <ion-list-header>
+            <ion-label>Discounted Price ?</ion-label>
+          </ion-list-header>
+      
+          <ion-item>
+            <ion-label>Yes</ion-label>
+            <ion-radio slot="start" value="yes"></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="no" value="no"></ion-radio>
+          </ion-item>
+      
+         
+        </ion-radio-group>
+      </ion-list>
+    </ion-col>
+    
+    <ion-col>
+      <ion-item>
+        <ion-label>Cateogry</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="f">garment</ion-select-option>
+          <ion-select-option value="m">furniture</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+   </ion-row>
+ </ion-grid>
+    <!-- <ion-toolbar>
+      <ion-title size="large">Add Products</ion-title>
+    </ion-toolbar> -->
+  
+   
+  
+
+ 
+</ion-content>
