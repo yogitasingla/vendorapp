@@ -7,83 +7,86 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <ion-grid>
-   <ion-row>
-     <ion-col size="12">
-      <ion-item>
-        <ion-label position="floating">Product Name</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-     </ion-col>
-     <ion-col size="12">
-      <ion-item>
-        <ion-label position="floating">Product Description</ion-label>
-        <ion-textarea></ion-textarea>
-      </ion-item>
-    </ion-col>
-    <ion-col size="6">
-      <ion-item>
-        <ion-label position="floating">Product MRP</ion-label>
-        <ion-input type="number"></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col size="6">
-      <ion-item>
-        <ion-label position="floating">Discounted Price</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col size="6">
-      <ion-item>
-        <ion-label position="floating">Floating Label</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col size="6">
-      <ion-item>
-        <ion-label position="floating">Floating Label</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-list>
-        <ion-radio-group value="yes">
-          <ion-list-header>
-            <ion-label>Discounted Price ?</ion-label>
-          </ion-list-header>
-      
-          <ion-item>
-            <ion-label>Yes</ion-label>
-            <ion-radio slot="start" value="yes"></ion-radio>
-          </ion-item>
-      
-          <ion-item>
-            <ion-label>No</ion-label>
-            <ion-radio slot="no" value="no"></ion-radio>
-          </ion-item>
-      
-         
-        </ion-radio-group>
-      </ion-list>
-    </ion-col>
-    
-    <ion-col>
-      <ion-item>
-        <ion-label>Cateogry</ion-label>
-        <ion-select placeholder="Select One">
-          <ion-select-option value="f">garment</ion-select-option>
-          <ion-select-option value="m">furniture</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-   </ion-row>
- </ion-grid>
-    <!-- <ion-toolbar>
-      <ion-title size="large">Add Products</ion-title>
-    </ion-toolbar> -->
-  
-   
-  
-
- 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Product Name</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Product Description</ion-label>
+          <ion-textarea></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-item>
+          <ion-label position="floating">Product MRP</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+     
+      <ion-col size="8">
+        <ion-item>
+          <ion-checkbox checked color="primary"></ion-checkbox>
+          <ion-label class="ion-padding-start">  Any Discount on Product ? </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating">Quantity</ion-label>
+          <ion-input></ion-input>
+        </ion-item> 
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating">Discounted Price</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating">Category</ion-label>
+          <ion-input></ion-input>
+        </ion-item> 
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating">unit</ion-label>
+          <ion-input></ion-input>
+        </ion-item> 
+      </ion-col>
+     
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating">Add Images</ion-label>
+          <ion-input type="file"></ion-input>
+        </ion-item> 
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <!-- <ion-label position="floating">Add Images</ion-label>
+          <ion-input type="file"></ion-input> -->
+          <input type="file" name="uploadfile" id="img" style="display:none;"/>
+        <label for="img">Click me to upload image</label>
+        </ion-item> 
+      </ion-col>
+     
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-button shape="round" fill="outline">Add Product</ion-button>
+    </ion-row>
+    </ion-grid>
 </ion-content>

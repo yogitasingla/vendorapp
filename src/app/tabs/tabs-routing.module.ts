@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SplashPage } from '../splash/splash.page';
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
@@ -35,8 +36,12 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'splash',
+    component: SplashPage,
+  },
+  {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: 'splash',
     pathMatch: 'full'
   }
 ];
