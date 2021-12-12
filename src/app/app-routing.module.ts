@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'add-product',
     loadChildren: () => import('./products/add-product/add-product.module').then( m => m.AddProductPageModule)
+  },  {
+    path: 'otp',
+    loadChildren: () => import('./auth/otp/otp.module').then( m => m.OtpPageModule)
   }
+
 ];
 @NgModule({
   imports: [
