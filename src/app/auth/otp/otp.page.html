@@ -1,43 +1,48 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>OTP
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-grid>
-  <ion-row class="ion-justify-content-center">
-    <ion-col>
-      <ion-card>
-        
-        <ion-title class="ion-text-center" style="margin-top: 30px;">VERIFICATION</ion-title>
-        <ion-card-content>
-          Enter verification code which we have send to 8645365547 number.
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col>
+        <ion-card>
           
-              <div id="form" style="padding-top: 30px; padding-left: 30px;">
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
-                <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
-                
-              </div>
-
-          
-        </ion-card-content>
-        <ion-row>
-          <ion-col>
-            <ion-button expand="block">Login</ion-button>
-          </ion-col>
-        </ion-row>
-
-        <ion-input  style="margin-left: 110px;">Don't get message?</ion-input>
-      <ion-input style="margin-left: 140px;
-      color: rgb(92, 92, 228); font-weight: bold;">Resend</ion-input>
-      
-      
-      </ion-card>
-    </ion-col>
-    
-  </ion-row>
+          <ion-title class="ion-text-center" style="margin-top: 30px;">VERIFICATION</ion-title>
+          <ion-card-content>
+            Enter verification code which we have send to 8645365547 number.
+            
+                <div id="form" style="padding-top: 30px; padding-left: 30px;">
+                  <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
+                  <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
+                  <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
+                  <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />&nbsp;&nbsp;
+                  
+                </div>
   
-</ion-grid>
+            
+          </ion-card-content>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="block" [routerLink]="['/tabs']">Login</ion-button>
+            </ion-col>
+          </ion-row>
+  
+          <ion-input  style="margin-left: 110px;">Don't get message?</ion-input>
+        <ion-input style="margin-left: 140px;
+        color: rgb(92, 92, 228); font-weight: bold;">Resend</ion-input>
+        
+        
+        </ion-card>
+      </ion-col>
+      
+    </ion-row>
+    
+  </ion-grid>
+</ion-content>

@@ -36,9 +36,11 @@
     </ion-slide>
 
     <ion-slide>
-      <img src="./slide-4.png" />
+      <img src="../../assets/img/splash2.png" />
       <h2>Ready to Play?</h2>
-      <ion-button fill="clear" [routerLink]="['/login']">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+      <ion-button (click)="navigate()">
+        
+        Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
     </ion-slide>
   </ion-slides>
 </ion-content>

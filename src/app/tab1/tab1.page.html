@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+     Dashboard
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+  <ion-content [fullscreen]="true">
+    <div class="ion-padding">
+      <ion-card>
+        <ion-card-header>
+          Bar Chart
+        </ion-card-header>
+        <ion-card-content>
+          <!-- <dx-chart id="chart" [dataSource]="dataSource">
+            <dxi-series
+              argumentField="day"
+              valueField="oranges"
+              name="My oranges"
+              type="bar"
+              color="#ffaa66"
+            >
+            </dxi-series>
+          </dx-chart> -->
+        </ion-card-content>
+      </ion-card>
+  
+   
+    </div>
+  </ion-content>
+ 
