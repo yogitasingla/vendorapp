@@ -11,5 +11,14 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-
+  togglePassword(ele, eye) {
+    if (ele.type === 'password') {
+      ele.type = 'text';
+      eye.name = 'eye-off-outline'
+    }
+    else {
+      ele.type = 'password';
+      eye.name = 'eye-outline'
+    }
+  }
 }
