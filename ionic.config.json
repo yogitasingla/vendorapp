@@ -1,5 +1,7 @@
 {
   "name": "vendor",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

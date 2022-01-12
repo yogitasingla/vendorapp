@@ -74,7 +74,7 @@ export class SplashPage implements OnInit {
   }
   public navigate(){
     
-    this.router.navigate(['/login'])
+    this.router.navigate(['/forgot-password'])
   }
 
 }
