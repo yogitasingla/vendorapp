@@ -21,4 +21,7 @@ export class LoginPage implements OnInit {
       eye.name = 'eye-outline'
     }
   }
+  // forgotPassword(){
+  //   this.router.navigate([`${internalUrl}/${internalId}`]);
+  // }
 }
