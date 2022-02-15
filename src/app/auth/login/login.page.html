@@ -29,7 +29,7 @@
       [routerLink]="['/tabs/tab1']">Log In</ion-button> -->
       <!-- <ion-button expand="block" shape="round">Block Button</ion-button> -->
       <ion-button class="login-button"
-       expand="block"   [disabled]="!email || !password" >Log In</ion-button>
+       expand="block"   [disabled]="!email || !password" (click)="login()">Log In</ion-button>
     <p><a routerLink="/forgot-password">Forgot password ?</a></p>
    
     <ion-button  class="signup-button"

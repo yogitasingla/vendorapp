@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 // import { NativeGeocoder, NativeGeocoderOptions, NativeGeocoderResult } from '@ionic-native/native-geocoder/ngx';
 import { Vendor } from 'src/app/_model/vendor';
 import {Constants} from 'src/app/_common/constant'
-// import { AuthService } from '../../_service/auth.service'
+ import { AuthService } from '../../_service/auth.service'
 
 
 @Component({
@@ -28,12 +28,13 @@ export class RegisterPage implements OnInit {
   constructor(
     // private geolocation: Geolocation,
     // private nativeGeocoder: NativeGeocoder,
-    // private authService: AuthService
+    private authService: AuthService
     ) { }
 
   ngOnInit() {
   //  this.getlocation()
   }
+
   // getlocation(){
    
   //     this.geolocation.getCurrentPosition()
@@ -94,5 +95,22 @@ export class RegisterPage implements OnInit {
   //   //   .subscribe(
   //   //     (result: any) => {})
   // }
+
+  register(){
+    let data={
+      'seller_name':this.seller_name,
+      'Business_name':this.Business_name,
+      'business_type':this.business_type,
+      'email':this.email,
+      'mobile_no':this.mobile_no,
+      'password':this.password
+     }
+    console.log('data on register',data);
+    this.authService.register(data).subscribe(
+      (result: any) => {
+        console.log('result----------',result);
+      }
+    )
+  }
 
 }

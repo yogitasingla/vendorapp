@@ -61,8 +61,8 @@
     </div>
     <div class="action-button ion-padding">
       <!-- <ion-button  class="register-button" [routerLink]="['/tabs/tab1']">Register</ion-button> -->
-      <!-- <ion-button  class="register-button" [disabled]="!password || !email || !location || !mobile_no || !business_type || !seller_name || !Business_name"
-       click="register()">Register</ion-button> -->
+      <ion-button  class="register-button" [disabled]="!password || !email || !mobile_no || !business_type || !seller_name || !Business_name"
+       (click)="register()">Register</ion-button>
     <p>Already have an account</p>
     <ion-button  class="login-button"  fill="outline" [routerLink]="['/login']">Log In</ion-button>
     </div>
