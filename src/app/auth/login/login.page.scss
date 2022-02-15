@@ -5,7 +5,7 @@
 ion-content{
     --background:linear-gradient(#04767a , #3dc2ff);
    
-   
+    // font-family: "Poppins";
 }
 .login-section{
     height: 75vh;
@@ -67,9 +67,10 @@ ion-content{
     .action-button{
         text-align: center;
         .login-button{
-            --background:#3dc2ff;
+            // --background:#3dc2ff;
+            --background:linear-gradient(to bottom right,#04767a , #3dc2ff);
             width: 100%;
-            font-weight: bold;
+            // font-weight: bold;
         }
 
         p{
@@ -80,8 +81,8 @@ ion-content{
         .signup-button{
             --border-color:#b4b4b4;
             color: #000000;
-            font-weight: bold;
-           
+            // font-weight: bold;
+            font-family: "Poppins";
             width: 100%;
 
         }

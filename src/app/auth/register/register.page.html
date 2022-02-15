@@ -1,67 +1,4 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>
-      Register
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-row class="ion-justify-content-center">
-      <ion-card>
-    
-        <ion-header class="ion-no-border">
-          <ion-toolbar>
-            <ion-title class="ion-text-center">Register</ion-title>
-          </ion-toolbar>
-        
-        </ion-header>
-      
-        <ion-item>
-          <ion-label  position="floating">Seller Name:</ion-label>
-          <ion-input placeholder="Enter Input"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label  position="floating">Business Name:</ion-label>
-          <ion-input placeholder="Enter Input"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label  position="floating">Business Type(Grocery store, Garments) </ion-label>
-          <ion-input placeholder="Enter Input"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label  position="floating">Enter your Whatsapp Name:</ion-label>
-          <ion-input placeholder="Enter Input"></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label  position="floating">Store Location:</ion-label>
-          <ion-input placeholder="Enter Input"></ion-input>
-        </ion-item>
-       
-        <ion-button  href="#" style="
-        /* padding-top: 15px; */
-        margin-top: 30px;
-        margin-left: 110px;
-      ">Register</ion-button>
-      
-      <ion-input  style="margin-left: 110px;">I have an account</ion-input>
-      <ion-input style="margin-left: 140px;
-      color: rgb(92, 92, 228); font-weight: bold;">Login</ion-input>
-      
-      
-      </ion-card>
-    </ion-row>
-  </ion-grid>
- 
-</ion-content>
- -->
+
  <ion-content>
   <div class="register-section ion-padding">
     <div class="heading ion-padding">
@@ -73,55 +10,59 @@
         <ion-icon name="person-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Seller Name:</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="seller_name" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
       </div>
       <div class="form-input">
         <ion-icon name="business-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Business Name:</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="Business_name" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
       </div>
       <div class="form-input">
         <ion-icon name="business-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Business Type</ion-label>
-          <ion-input type="text" placeholder="Grocery store, Garments"></ion-input>
+          <ion-input type="text" placeholder="Grocery store, Garments"
+          [(ngModel)]="business_type" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
       </div>
+      
       <div class="form-input">
         <ion-icon name="mail-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Email</ion-label>
-          <ion-input type="email"></ion-input>
+          <ion-input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
       </div>
       <div class="form-input">
         <ion-icon name="call-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Whatsapp Number</ion-label>
-          <ion-input type="tel"></ion-input>
+          <ion-input type="tel" [(ngModel)]="mobile_no" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
       </div>
       <div class="form-input">
         <ion-icon name="lock-closed-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Password</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
       </div>
      
-      <div class="form-input">
+      <!-- <div class="form-input">
         <ion-icon name="location-outline"></ion-icon>
         <ion-item>
           <ion-label position="floating">Store Location</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-input type="text" [(ngModel)]="location" [ngModelOptions]="{standalone: true}"></ion-input>
         </ion-item>
-      </div>
+      </div> -->
     </div>
     <div class="action-button ion-padding">
-      <ion-button  class="register-button" [routerLink]="['/tabs/tab1']">Register</ion-button>
+      <!-- <ion-button  class="register-button" [routerLink]="['/tabs/tab1']">Register</ion-button> -->
+      <!-- <ion-button  class="register-button" [disabled]="!password || !email || !location || !mobile_no || !business_type || !seller_name || !Business_name"
+       click="register()">Register</ion-button> -->
     <p>Already have an account</p>
     <ion-button  class="login-button"  fill="outline" [routerLink]="['/login']">Log In</ion-button>
     </div>
